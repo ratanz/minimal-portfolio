@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 // Extract icon as a separate component for better organization
-const DocumentIcon = ({ className }) => (
+const DocumentIcon = ({ className }: { className: string }) => (
   <svg 
     width="24" 
     height="24" 
@@ -48,12 +48,12 @@ const PROFILE_DATA = {
 
 const Header = () => {
   return (
-    <header className="flex h-20 w-full overflow-hidden bg-white">
-      <div className="flex w-full justify-between px-3">
+    <header className="flex h-20 w-full overflow-hidden border-b pb-2 border-zinc-900/10">
+      <div className="flex w-full justify-between">
         {/* Profile Section */}
         <div className="flex items-center gap-3 overflow-hidden">
           <Image
-            className="rounded-full h-14 w-14 object-cover"
+            className="rounded-full h-18 w-18 object-cover"
             src={PROFILE_DATA.imageUrl}
             alt={`${PROFILE_DATA.name} profile picture`}
             width={40}
@@ -63,7 +63,7 @@ const Header = () => {
             <h1 className="text-3xl font-semibold text-gray-900">
               {PROFILE_DATA.name}
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-800 text-lg">
               {PROFILE_DATA.title}
             </p>
           </div>
