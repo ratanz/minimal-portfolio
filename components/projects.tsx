@@ -61,7 +61,7 @@ const projects: ProjectItem[] = [
 
 export default function Projects() {
   return (
-    <section className=" py-12 w-full mx-auto">
+    <section className=" py-10 w-full mx-auto">
       <div className="mb-4">
         <h2 className="text-2xl font-bold text-foreground mb-8">
           Projects <span className="text-muted-foreground font-normal"># (sorted by most recent)</span>
