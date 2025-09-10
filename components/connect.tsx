@@ -36,7 +36,7 @@ const connectData = [
 export default function Connect() {
   return (
     <section className="py-12 mx-auto">
-      <h2 className="text-2xl font-semibold mb-8 text-foreground">
+      <h2 className="text-2xl font-bold mb-8 text-foreground">
         Connect <span className="text-muted-foreground">#</span>
       </h2>
 
