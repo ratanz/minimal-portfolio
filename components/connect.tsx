@@ -40,7 +40,7 @@ export default function Connect() {
         Connect <span className="text-muted-foreground">#</span>
       </h2>
 
-      <div className="space-y-2">
+      <div className="space-y-2 md:px-0 px-2">
         {connectData.map((item, index) => {
           const IconComponent = item.icon
 

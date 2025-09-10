@@ -24,8 +24,8 @@ const projects: ProjectItem[] = [
       "Reduced page load time by 70% through implementation of image optimization and lazy loading",
     ],
     techStack: ["Next.js", "TypeScript", "NextAuth", "TailwindCSS", "MongoDB", "Framer Motion", "GSAP", "AWS"],
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "https://phoenix-fits.vercel.app",
+    codeUrl: "https://github.com/ratanz/phoenix-fits",
   },
   {
     title: "LiveDocs",
@@ -39,8 +39,8 @@ const projects: ProjectItem[] = [
       "Integrated Lexical editor for rich-text features and Clerk for authentication, improving collaboration task completion speed by ~90%",
     ],
     techStack: ["Next.js", "TypeScript", "ShadCN", "TailwindCSS", "Clerk", "Lexical Editor", "WebSocket"],
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "https://livedocs-doc.vercel.app",
+    codeUrl: "https://github.com/ratanz/livedocs",
   },
   {
     title: "StudioSize",
@@ -54,8 +54,8 @@ const projects: ProjectItem[] = [
       "Added smooth scrolling and interactive animations using Lenis and Framer Motion, enhancing user engagement",
     ],
     techStack: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Lenis", "SwiperJS"],
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "https://studio-size-seven.vercel.app/",
+    codeUrl: "https://github.com/ratanz/StudioSize",
   },
 ]
 
