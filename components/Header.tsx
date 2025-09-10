@@ -12,22 +12,22 @@ const PROFILE_DATA = {
 
 const Header = () => {
   return (
-    <header className="flex h-24 w-full overflow-hidden border-b pb-4 border-zinc-900/10">
+    <header className="flex h-24 w-screen lg:px-0 px-4 md:mt-0 mt-5 overflow-hidden border-b pb-4 border-zinc-900/10">
       <div className="flex w-full justify-between">
         {/* Profile Section */}
         <div className="flex items-center gap-4 overflow-hidden">
           <Image
-            className="rounded-full h-18 w-18 object-cover"
+            className="rounded-full md:h-18 md:w-18 h-14 w-14 object-cover"
             src={PROFILE_DATA.imageUrl}
             alt={`${PROFILE_DATA.name} profile picture`}
             width={40}
             height={40}
           />
           <div>
-            <h1 className="text-3xl font-semibold text-gray-900">
+            <h1 className="md:text-3xl text-2xl font-semibold text-gray-900">
               {PROFILE_DATA.name}
             </h1>
-            <p className="text-zinc-500 text-lg">
+            <p className="text-zinc-500 md:text-lg text-sm">
               {PROFILE_DATA.title}
             </p>
           </div>

@@ -32,14 +32,14 @@ interface ExperienceItem {
   
   export default function Experience() {
     return (
-      <section className="w-full py-16">
+      <section className="md:w-full w-screen py-18 md:py-16 md:px-0 px-4">
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-foreground mb-6">
             Experiences <span className="text-muted-foreground font-bold">#</span>
           </h2>
         </div>
   
-        <div className="space-y-6">
+        <div className="space-y-8">
           {experiences.map((experience, index) => (
             <div key={index} className="space-y-2">
               <div className="flex items-baseline gap-2 flex-wrap">
@@ -50,7 +50,7 @@ interface ExperienceItem {
   
               <ul className="space-y-2 max-w-3xl">
                 {experience.description.map((point, pointIndex) => (
-                  <li key={pointIndex} className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2">
+                  <li key={pointIndex} className="md:text-sm text-xs text-muted-foreground leading-relaxed flex items-start gap-2">
                     <span className="text-muted-foreground mt-1.5 text-xs">•</span>
                     <span>{point}</span>
                   </li>

@@ -27,7 +27,7 @@ export default function Achievements() {
     ]
 
     return (
-        <section className="py-10 px-1 max-w-4xl mx-auto">
+        <section className="py-10 md:w-full w-screen md:px-0 px-4 mx-auto">
             <h2 className="text-2xl font-bold text-foreground mb-8">
                 Achievements <span className="text-muted-foreground">#</span>
             </h2>
@@ -35,8 +35,8 @@ export default function Achievements() {
             <div className="space-y-5">
                 {achievements.map((achievement, index) => (
                     <div key={index} className="space-y-2">
-                        <h3 className="text-lg font-semibold text-foreground">{achievement.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{achievement.description}</p>
+                        <h3 className="md:text-lg text-md font-semibold text-foreground">{achievement.title}</h3>
+                        <p className="text-xs leading-relaxed">{achievement.description}</p>
                     </div>
                 ))}
             </div>

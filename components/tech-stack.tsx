@@ -31,14 +31,14 @@ const techStack: TechItem[] = [
 
 export default function TechStack() {
   return (
-    <section className="py-10 px-1 mx-auto">
+    <section className="py-10 mx-auto md:w-full w-screen md:px-0 px-3">
       <div className="mb-4">
         <h2 className="text-2xl font-bold text-foreground mb-8">
           Tech-Stack <span className="text-muted-foreground">#</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:px-0 px-4">
         {techStack.map((tech) => (
           <div
             key={tech.name}

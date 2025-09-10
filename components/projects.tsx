@@ -61,7 +61,7 @@ const projects: ProjectItem[] = [
 
 export default function Projects() {
   return (
-    <section className=" py-10 w-full mx-auto">
+    <section className=" py-10 md:px-0 px-4 md:w-full w-screen  mx-auto">
       <div className="mb-4">
         <h2 className="text-2xl font-bold text-foreground mb-8">
           Projects <span className="text-muted-foreground font-normal"># (sorted by most recent)</span>
@@ -72,7 +72,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border border-black/20 p-4 hover:border-border botransition-colors duration-200"
+            className="border border-black/20 md:p-4 p-4 hover:border-border botransition-colors duration-200"
           >
             <div className="flex items-start justify-between mb-4">
               <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
