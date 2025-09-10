@@ -31,9 +31,9 @@ const techStack: TechItem[] = [
 
 export default function TechStack() {
   return (
-    <section className="py-16 px-1 mx-auto">
+    <section className="py-10 px-1 mx-auto">
       <div className="mb-4">
-        <h2 className="text-2xl font-semibold text-foreground mb-2">
+        <h2 className="text-2xl font-bold text-foreground mb-8">
           Tech-Stack <span className="text-muted-foreground">#</span>
         </h2>
       </div>

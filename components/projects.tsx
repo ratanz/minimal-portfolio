@@ -46,7 +46,7 @@ const projects: ProjectItem[] = [
     title: "StudioSize",
     date: "July 2024",
     description:
-      "A dynamic, animation-rich showcase platform for creative agencies with modern design principles and seamless user experience",
+      "A dynamic, animation-rich showcase platform for creative agencies with modern design principles",
     features: [
       "Made a website for creative agencies, showcasing various kinds of services and work, in an interactive and modern way",
       "Leveraged GSAP for complex, performance-optimized animations and transitions",
@@ -61,9 +61,9 @@ const projects: ProjectItem[] = [
 
 export default function Projects() {
   return (
-    <section className="w-full mx-auto px-1">
+    <section className=" py-12 w-full mx-auto">
       <div className="mb-4">
-        <h2 className="text-xl font-semibold text-foreground mb-1">
+        <h2 className="text-2xl font-bold text-foreground mb-8">
           Projects <span className="text-muted-foreground font-normal"># (sorted by most recent)</span>
         </h2>
       </div>
@@ -102,9 +102,9 @@ export default function Projects() {
               </div>
             </div>
 
-            <p className="text-muted-foreground mb-3 leading-5">{project.description}</p>
+            <p className="text-muted-foreground mb-3 leading-8">{project.description}</p>
 
-            <ul className="space-y-2 mb-4">
+            <ul className="space-y-3 mb-4">
               {project.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2">
                   <span className="text-muted-foreground/60 mt-1 text-xs">•</span>

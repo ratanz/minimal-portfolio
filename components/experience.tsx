@@ -32,10 +32,10 @@ interface ExperienceItem {
   
   export default function Experience() {
     return (
-      <section className="w-full px- py-12">
+      <section className="w-full py-16">
         <div className="mb-6">
-          <h2 className="text-xl font-semibold text-foreground mb-1">
-            Experiences <span className="text-muted-foreground font-normal">#</span>
+          <h2 className="text-2xl font-bold text-foreground mb-6">
+            Experiences <span className="text-muted-foreground font-bold">#</span>
           </h2>
         </div>
   

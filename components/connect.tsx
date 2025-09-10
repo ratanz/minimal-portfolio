@@ -35,12 +35,12 @@ const connectData = [
 
 export default function Connect() {
   return (
-    <section className="py-16 px-1 mx-auto">
+    <section className="py-12 mx-auto">
       <h2 className="text-2xl font-semibold mb-8 text-foreground">
         Connect <span className="text-muted-foreground">#</span>
       </h2>
 
-      <div className="space-y-1">
+      <div className="space-y-2">
         {connectData.map((item, index) => {
           const IconComponent = item.icon
 
@@ -50,17 +50,17 @@ export default function Connect() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between py-2 group transition-all duration-200 hover:border-r-2 hover:border-foreground/30 hover:pr-2"
+              className="flex items-center justify-between py-2 pr-2 border-r-2 border-transparent group transition-all duration-200 ease-out hover:border-gray-900 hover:translate-x-1"
             >
               <div className="flex items-center gap-3">
-                <IconComponent className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                <IconComponent className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-150" />
                 <span className="text-foreground font-medium">{item.platform}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                <span className="text-muted-foreground group-hover:text-foreground transition-colors duration-150">
                   {item.value}
                 </span>
-                <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-foreground transition-colors duration-200" />
+                <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-foreground group-hover:scale-110 transition-all duration-150" />
               </div>
             </a>
           )
