@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { File } from 'lucide-react'
+import { ContainerTextFlip } from './ui/container-text-flip'
 
 // Constants for better maintainability
 const PROFILE_DATA = {
@@ -12,7 +13,7 @@ const PROFILE_DATA = {
 
 const Header = () => {
   return (
-    <header className="flex h-24 w-screen lg:px-0 px-4 md:mt-0 mt-5 overflow-hidden border-b pb-4 border-zinc-900/10">
+    <header className="flex h-24 md:w-full w-screen lg:px-0 px-4 md:p-0 pt-5 overflow-hidden border-b pb-4 border-zinc-900/10">
       <div className="flex w-full justify-between">
         {/* Profile Section */}
         <div className="flex items-center gap-4 overflow-hidden">
@@ -27,9 +28,7 @@ const Header = () => {
             <h1 className="md:text-3xl text-2xl font-semibold text-gray-900">
               {PROFILE_DATA.name}
             </h1>
-            <p className="text-zinc-500 md:text-lg text-sm">
-              {PROFILE_DATA.title}
-            </p>
+              <ContainerTextFlip />
           </div>
         </div>
 
@@ -43,7 +42,7 @@ const Header = () => {
             aria-label="Download resume"
           >
             <span className='text-zinc-500 hover:text-black flex items-center gap-0.5'>Resume
-            <File height={18} className='' />
+              <File height={18} className='' />
             </span>
           </a>
         </div>

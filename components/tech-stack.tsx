@@ -42,10 +42,10 @@ export default function TechStack() {
         {techStack.map((tech) => (
           <div
             key={tech.name}
-            className="flex items-center justify-center hover:bg-black hover:text-white hover:cursor-pointer gap-3 p-3 border transition-all duration-200 hover:scale-105 hover:shadow-sm bg-background"
+            className="group flex items-center justify-center hover:bg-black hover:text-white hover:cursor-pointer gap-3 p-3 border transition-all duration-200 hover:scale-105 hover:shadow-sm"
           >
-            <div className="text-muted-foreground">{tech.icon}</div>
-            <span className="text-sm font-medium text-foreground">{tech.name}</span>
+            <div className="">{tech.icon}</div>
+            <span className="text-sm font-medium text-foreground not-even: group-hover:text-white">{tech.name}</span>
           </div>
         ))}
       </div>
