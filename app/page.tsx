@@ -4,17 +4,19 @@ import Connect from "@/components/connect";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import TechStack from "@/components/tech-stack";
+import FooterText from "@/components/footerText";
 
 export default function Home() {
   return (
   <>
-    <main className="w-2/3 md:mx-auto md:p-14 lg:p-18 h-full bg-zinc text-black">
+    <main className="w-2/3 md:mx-auto md:p-14 lg:p-18 h-[470vh] text-black">
       <Header/>
       <Experience/>
       <Projects/>
       <TechStack/>
       <Achievements/>
       <Connect/>
+      <FooterText/>
     </main>
   </>
   );
