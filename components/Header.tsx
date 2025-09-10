@@ -13,7 +13,7 @@ const PROFILE_DATA = {
 
 const Header = () => {
   return (
-    <header className="flex h-24 md:w-full w-screen lg:px-0 px-4 md:p-0 pt-5 overflow-hidden border-b pb-4 border-zinc-900/10">
+    <header className="flex h-24 md:w-full w-screen lg:px-0 px-4 md:p-0 overflow-hidden border-b pb-4 border-zinc-900/10">
       <div className="flex w-full justify-between">
         {/* Profile Section */}
         <div className="flex items-center gap-4 overflow-hidden">
