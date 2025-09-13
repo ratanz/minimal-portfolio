@@ -40,11 +40,11 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{
               opacity: 0,
-              y: -80,
+              y: -100,
               scale: 1,
               filter: "blur(10px)",
               transition: {
-                duration: 1.8,
+                duration: 2,
                 ease: [0.4, 0, 0.2, 1],
               },
             }}
