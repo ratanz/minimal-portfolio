@@ -41,8 +41,8 @@ const Header = () => {
             className="text-gray-900 transition-transform duration-150 ease-in-out hover:scale-105"
             aria-label="Download resume"
           >
-            <span className='text-zinc-500 hover:text-black flex items-center gap-0.5'>Resume
-              <File height={18} className='' />
+            <span className='text-zinc-700 hover:text-black flex items-center'>Resume
+              <File height={17} className='' />
             </span>
           </a>
         </div>
