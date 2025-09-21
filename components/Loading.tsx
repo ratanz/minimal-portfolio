@@ -14,13 +14,13 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false)
-      setTimeout(onLoadingComplete, 1200) // 1800ms for slower exit animation
-    }, 3200) // Show for 3 seconds
+      setTimeout(onLoadingComplete, 1400) // 1800ms for slower exit animation
+    }, 2700) // Show for 3 seconds
 
     return () => clearTimeout(timer)
   }, [onLoadingComplete])
 
-  const welcomeText = "WELCOME"
+  const welcomeText = "Hello"
   const letters = welcomeText.split("")
 
   return (
@@ -30,7 +30,7 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
           initial={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{
-            duration: 1.8,
+            duration: 2.3,
             ease: [0.25, 0.1, 0.25, 1], // Smoother cubic-bezier curve
           }}
           className="fixed inset-0 bg-white z-50 flex items-center justify-center"
@@ -42,7 +42,7 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
               opacity: 0,
               y: -100,
               scale: 1,
-              filter: "blur(10px)",
+              filter: "blur(20px)",
               transition: {
                 duration: 2,
                 ease: [0.4, 0, 0.2, 1],
@@ -50,7 +50,7 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
             }}
             transition={{
               duration: 1,
-              ease: "easeOut",
+              ease: "easeInOut",
             }}
             className="text-center"
           >
