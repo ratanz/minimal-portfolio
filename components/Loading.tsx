@@ -44,7 +44,7 @@ const Loading: React.FC<LoadingProps> = ({ onLoadingComplete }) => {
               scale: 1,
               filter: "blur(20px)",
               transition: {
-                duration: 2,
+                duration: 1.4,
                 ease: [0.4, 0, 0.2, 1],
               },
             }}
