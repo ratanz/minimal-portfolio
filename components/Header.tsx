@@ -25,7 +25,7 @@ const Header = () => {
             height={40}
           />
           <div>
-            <h1 className="md:text-3xl text-2xl font-semibold text-gray-900">
+            <h1 className="md:text-3xl text-xl font-semibold text-gray-900">
               {PROFILE_DATA.name}
             </h1>
               <ContainerTextFlip />
