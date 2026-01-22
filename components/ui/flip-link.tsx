@@ -21,11 +21,11 @@ interface FlipLinkProps {
  * On hover, each letter flips upward with a staggered effect, creating
  * a premium and eye-catching animation.
  * 
- * @param children - The text to display and animate (must be a string)
- * @param href - The URL the link points to
- * @param className - Optional CSS classes for styling
- * @param target - Optional link target (e.g., "_blank")
- * @param rel - Optional link relationship (e.g., "noopener noreferrer")
+ * @param children
+ * @param href 
+ * @param className 
+ * @param target 
+ * @param rel 
  */
 export const FlipLink = ({ children, href, className = '', target, rel }: FlipLinkProps) => {
     return (
