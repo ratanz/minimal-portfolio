@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { File } from 'lucide-react'
 import { ContainerTextFlip } from './ui/container-text-flip'
+import { FlipLink } from './ui/flip-link'
 
 // Constants for better maintainability
 const PROFILE_DATA = {
@@ -28,23 +28,20 @@ const Header = () => {
             <h1 className="md:text-3xl text-xl font-semibold text-gray-900">
               {PROFILE_DATA.name}
             </h1>
-              <ContainerTextFlip />
+            <ContainerTextFlip />
           </div>
         </div>
 
-        {/* Resume Button */}
-        <div className="flex items-center mt-2">
-          <a
+        {/* Resume Link with Flip Animation */}
+        <div className="flex items-center gap-6">
+          <FlipLink
             href={PROFILE_DATA.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-900 transition-transform duration-150 ease-in-out hover:scale-105"
-            aria-label="Download resume"
+            className="text-zinc-700 hover:text-black font-medium text-lg flex items-center gap-1"
           >
-            <span className='text-zinc-700 hover:text-black flex items-center'>Resume
-              <File height={17} className='' />
-            </span>
-          </a>
+            Resume
+          </FlipLink>
         </div>
       </div>
     </header>
